@@ -1,0 +1,80 @@
+@import '_fonts';
+@import '_colors';
+
+*{
+    margin: 0;
+    padding: 0;
+
+    color: $dark-black;
+
+    box-sizing: border-box;
+    font-family: 'Rubik', 'sans-serif';
+    font-size: 10px;
+}
+address{
+    font-style: normal;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-underline-offset: 0.5rem;
+    &:hover{
+        text-decoration: underline;
+    }
+    &.link{
+        color: blue;
+    }
+}
+p, a, span, blockquote, ul, ol, pre{
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+}
+blockquote{
+    padding-left: 1.6rem;
+
+    border-left: 6px solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.5);
+}
+pre{
+    padding: 1rem;
+
+    border-left: 6px solid rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.05);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', 'sans-serif';
+    letter-spacing: -0.1rem;
+}
+h1{
+    font-size: 3.4rem;
+    line-height: 5.4rem;
+}
+h2{
+    font-size: 3.1rem;
+    line-height: 5rem;
+}
+h3{
+    font-size: 2.4rem;
+    line-height: 4rem;
+}
+h4{
+    font-size: 1.9rem;
+    line-height: 3.3rem;
+}
+h5{
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+}
+h6{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+
+@media(max-width: 500px) {
+    p, a, span, blockquote, ul, ol, pre{
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+}
