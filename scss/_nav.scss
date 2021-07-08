@@ -10,6 +10,13 @@
                 }
             }
         }
+        .nav__list{
+            .list__item{
+                .item__link{
+                    color: black;
+                }
+            }
+        }
     }
 }
 .dark{
@@ -21,6 +28,13 @@
                 }
                 &.button--light-mode{
                     display: initial;
+                }
+            }
+        }
+        .nav__list{
+            .list__item{
+                .item__link{
+                    color: white;
                 }
             }
         }
